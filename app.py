@@ -11,6 +11,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route("/")
+def home():
+    return "Flask app is working!"
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
